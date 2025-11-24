@@ -1,0 +1,174 @@
+<html>
+<head>
+  <title>Лабораторная работа 6</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="100" tabindex="0">
+
+  <!-- Боковое меню  -->
+  <nav id="sidebar" class="sidebar navbar-expand-md position-fixed top-0 start-0 h-100" style="width: 220px; padding-top: 60px;">
+    <div class="collapse navbar-collapse">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#carouselSection">Карусель</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#filmsSection">Фильмы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bioSection">Об актёре</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+ <!-- Верхнее меню  -->
+<nav class="navbar navbar-expand-lg position-fixed top-0 start-0 w-100" style="z-index: 1030;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="info.html">Информация</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="films.html">Фильмы</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Основной контент  -->
+<div style="margin-left: 240px; margin-top: 70px;">
+ 
+    <div class="main-container">
+
+
+      <!-- Карусель -->
+
+      <div id="carouselSection" class="mb-5">
+        <div id="actorCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/главное фото 1.jpg" class="d-block w-100" alt="Фото 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/главное фото 2.jpg" class="d-block w-100" alt="Фото 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/главное фото 3.jpg" class="d-block w-100" alt="Фото 3">
+            </div>
+            <div class="carousel-item">
+              <img src="img/главное фото 4.jpg" class="d-block w-100" alt="Фото 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/главное фото 5.jpg" class="d-block w-100" alt="Фото 5">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#actorCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#actorCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Карточки фильмов -->
+         <h2 class="mb-4">Фильмы с участием актёра</h2>
+      <div id="filmsSection" class="films-section mb-5">
+        <div class="row">
+
+          <!-- Карточка фильма 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/постер фильма 1.jpg" class="card-img-top h-150" alt="Постер фильма 1" style="max-width: 100%; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Подземелья и драконы: Честь среди воров» (2023)</h5>
+                <p class="card-text"><br>Бард Эдгин Дарвис вместе с боевой подругой Хольгой сбегает из тюрьмы и отправляется повидать дочку, которую последние годы опекал его бывший подельник Фордж, который настроил дочь против отца.</p>
+                <a href="https://www.kinopoisk.ru/film/762646/" target="_blank" class="btn btn-primary">Смотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка фильма 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/постер фильма 2.jpg" class="card-img-top h-150" alt="Постер фильма 2" style="max-width: 100%; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Джентльмены (2019)</h5>
+                <p class="card-text"> <br>Микки Пирсон организовал империю по выращиванию наркотиков, используя земли обедневших аристократов. Он хочет продать свой бизнес американскому бизнесмену, однако разоблачение Пирсона угрожает сорвать сделку.</p>
+                <a href="https://www.kinopoisk.ru/film/1143242/" target="_blank" class="btn btn-primary">Смотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка фильма 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/постер фильма 3.jpg" class="card-img-top h-150" alt="Постер фильма 3" style="max-width: 100%; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Еретик (2024)</h5>
+                <p class="card-text"><br>Церковная миссия приводит двух молодых мормонок к мистеру Риду. Мужчина рассуждает о религии, вызывая у девушек подозрения. Улизнуть втихаря не удаётся, и вскоре выяснится, что их ждут изощрённые издевательства и настоящее испытание веры.</p>
+                <a href="https://www.kinopoisk.ru/film/5942378/" target="_blank" class="btn btn-primary">Смотреть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Блок "Об актёре" -->
+<div id="bioSection" class="mb-5">
+  <h3>Краткая биография</h3>
+
+
+  <!-- Кнопка для показа/скрытия -->
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#actorInfo" aria-expanded="false" aria-controls="actorInfo">
+    Показать подробную информацию
+  </button>
+
+
+  <!-- Скрываемый блок -->
+  <div class="bio-collapse-wrapper">
+    <div class="collapse" id="actorInfo">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+
+            <!-- Текст (левая колонка) -->
+            <div class="col-md-8">
+              <p class="card-text">
+                <strong>Полное имя: </strong>Хью Джон Мунго Грант<br>
+                <strong>Дата рождения: </strong>9 сентября 1960 года<br>
+                <strong>Место рождения: </strong>Лондон, Англия<br>
+                <strong>Образование: </strong>Нью-колледж Оксфорда<br>
+              </p>
+              <p class="card-text">
+                <br>Награды: Премия «Золотой глобус» (1994) — лучший актёр, комедия/мюзикл («Четыре свадьбы и одни похороны»).<br>
+                Премия BAFTA (1994) — лучший актёр («Четыре свадьбы и одни похороны»).<br>
+                Серебряная премия Венецианского кинофестиваля (1987) — за лучшую мужскую роль («Морис»).
+              </p>
+            </div>
+
+            <!-- Фото (правая колонка) -->
+            <div class="col-md-4 text-center">
+              <img src="img/фото блок биография.jpg" alt="Хью Грант" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
